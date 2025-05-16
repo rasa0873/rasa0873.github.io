@@ -31,7 +31,10 @@ async function submitEvaluation() {
 
         const gptReply = await response.json();
         console.log("Full response from backend:", gptReply);
-        responseBox.innerHTML = `<strong>AI Analysis:</strong> ${gptReply.openaiResponse || "No valid response received."}`;
+        responseBox.innerHTML = `<strong>AI Analysis:</strong><br>
+<div style="white-space: pre-wrap; font-family: Arial, sans-serif; line-height: 1.6; padding: 12px; border-radius: 8px; background: #f8f9fa; border: 1px solid #ddd;">
+${gptReply.openaiResponse || "No valid response received."}
+</div>`;
     } catch (error) {
         console.error("❌ API Call Failed:", error);
         responseBox.innerHTML = "Error processing your request.";
