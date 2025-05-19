@@ -1,27 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>AI-Talento Maqueta 1</title>
+    <title>AITalento Maqueta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        textarea, input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h2>Forma para el perfil del candidato</h2>
 
-<div style="display: flex; flex-direction: column; max-width: 500px;">
-    <label for="name">Nombre, Profesión y Experiencia:</label>
-    <input type="text" id="name" style="margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+    <h2>Cuestionario de Perfil Laboral - AITalento - Maqueta</h2>
 
-    <label for="about">Cuéntanos sobre ti:</label>
-    <textarea id="about" style="margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+    <form id="evaluationForm">
+        <!-- Question 1 -->
+        <label for="q1">¿Podrías compartir información clave sobre ti, como tu nombre completo, edad, sexo, lugar de residencia y situación familiar? ¿Con quién vives? ¿Estás casado/a? ¿Tienes hijos?</label>
+        <textarea id="q1" rows="4"></textarea>
 
-    <label for="dreamJob">Describe tu trabajo ideal:</label>
-    <textarea id="dreamJob" style="margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+        <!-- Question 2 -->
+        <label for="q2">¿Cómo describirías tu entorno de vida actual? ¿Qué factores influyen en tu desarrollo personal y profesional?</label>
+        <textarea id="q2" rows="4"></textarea>
 
-    <button onclick="submitEvaluation()" style="margin-top: 10px; padding: 10px; border-radius: 5px; background: #007bff; color: white; border: none;">Enviar</button>
-</div>
+        <!-- Question 3 -->
+        <label for="q3">¿Cuál ha sido tu trayectoria educativa? ¿Cuál es tu último título adquirido y estudias actualmente?
+            ¿Has adquirido conocimientos de forma autodidacta o mediante experiencias no académicas que nos quieras comentar?
+        </label>
+        <textarea id="q3" rows="4"></textarea>
 
-    <h3>Análisis generado por IA:</h3>
-    <div id="response" style="white-space: pre-wrap; font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; border-radius: 8px; background: #f8f9fa;">
-</div>
+        <!-- Question 4 -->
+        <label for="q4">¿Cómo ha sido tu recorrido profesional hasta ahora?
+            Cuál fue tu trabajo más prolongado, el más breve, cuál te gustó más y cuál no fue de tu agrado?
+            ¿En qué empresa fue y qué hacías?</label>
+        <textarea id="q4" rows="4"></textarea>
+
+        <!-- Question 5 -->
+        <label for="q5">¿Qué roles y responsabilidades has tenido y cuáles han sido tus mayores aprendizajes?
+            ¿Cuáles son tus principales fortalezas en el ámbito laboral?
+            ¿Qué habilidades consideras esenciales en tu desarrollo profesional?
+        </label>
+        <textarea id="q5" rows="4"></textarea>
+
+        <!-- Question 6 -->
+        <label for="q6">¿Cómo visualizas el tipo de empleo que te gustaría tener?
+            ¿Cuáles son las condiciones ideales para que te sientas motivado/a y comprometido/a?
+            ¿En qué área crees que podrías aportar más conocimientos y experiencia?
+        </label>
+        <textarea id="q6" rows="4"></textarea>
+
+        <!-- Question 7 -->
+        <label for="q7">¿Qué modalidades de trabajo prefieres (presencial, remoto, híbrido) y cuál sería tu disponibilidad horaria óptima?</label>
+        <textarea id="q7" rows="4"></textarea>
+
+        <!-- Question 8 -->
+        <label for="q8">¿Cuál sería tu trabajo ideal considerando tanto tus deseos como las oportunidades reales del mercado laboral?</label>
+        <textarea id="q8" rows="4"></textarea>
+
+        <!-- Question 9 -->
+        <label for="q9">¿Qué aspectos consideras fundamentales al elegir un empleo (salario, cultura empresarial, oportunidades de crecimiento, estabilidad, propósito)?</label>
+        <textarea id="q9" rows="4"></textarea>
+
+        <!-- Question 10 -->
+        <label for="q10">Si tuvieras la posibilidad de redefinir tu trayectoria laboral, ¿qué te gustaría aprender o explorar en el futuro?</label>
+        <textarea id="q10" rows="4"></textarea>
+
+        <!-- Question 11 -->
+        <label for="q11">Cuéntame sobre un momento en tu trayectoria laboral en el que tuviste que adaptarte a un cambio inesperado. ¿Cómo manejaste la situación?</label>
+        <textarea id="q11" rows="4"></textarea>
+
+        <!-- Question 12 -->
+        <label for="q12">Relata una experiencia en la que enfrentaste una dificultad laboral importante. ¿Qué hiciste para superarla y qué aprendiste de la situación?</label>
+        <textarea id="q12" rows="4"></textarea>
+
+        <!-- Question 13 -->
+        <label for="q13">¿Puedes compartir una experiencia en la que tu capacidad de colaboración fue crucial para resolver un problema o mejorar el ambiente laboral?</label>
+        <textarea id="q13" rows="4"></textarea>
+
+        <!-- Question 14 -->
+        <label for="q14">Describe un caso en el que tuviste que gestionar una diferencia con un colega, cliente o líder. ¿Qué enfoque adoptaste y qué resultados lograste?</label>
+        <textarea id="q14" rows="4"></textarea>
+
+        <!-- Question 15 -->
+        <label for="q15">Cuéntame sobre una ocasión en la que tuviste que tomar una decisión importante con información limitada. ¿Cómo manejaste la incertidumbre y qué resultado obtuviste?</label>
+        <textarea id="q15" rows="4"></textarea>
+        
+        <!-- Question 16 -->
+        <label for="q16">Describe un momento en el que enfrentaste una situación laboral inesperada que afectó a tu equipo o empresa. 
+            ¿Cómo reaccionaste y qué estrategias implementaste para resolverlo?</label>
+        <textarea id="q16" rows="4"></textarea>
+
+        <!-- Question 17 -->
+        <label for="q17">¿Has tenido que asumir un rol de liderazgo en una situación complicada? ¿Cómo motivaste a tu equipo y qué impacto tuvo tu 
+            intervención?</label>
+        <textarea id="q17" rows="4"></textarea>
+
+        <!-- Question 18 -->
+        <label for="q18">Relata una experiencia en la que tuviste que encontrar una solución creativa para un problema complejo. 
+            ¿Qué alternativas consideraste y cómo llegaste a la mejor opción?</label>
+        <textarea id="q18" rows="4"></textarea>
+
+        <!-- Question 19 -->
+        <label for="q19">Cuéntame sobre una ocasión en la que tuviste un desacuerdo fuerte con un colega o líder. 
+            ¿Cómo manejaste la situación y qué aprendiste de ella?</label>
+        <textarea id="q19" rows="4"></textarea>
+
+        <!-- Question 20 -->
+        <label for="q20">¿Has vivido una transformación organizacional o un cambio de procesos que afectó tu trabajo? 
+            ¿Cómo te adaptaste y qué estrategias utilizaste para mantener tu desempeño?</label>
+        <textarea id="q20" rows="4"></textarea>
+
+        <!-- Question 21 -->
+        <label for="q21">Describe un momento en el que tuviste que convencer a alguien de una idea o propuesta. 
+            ¿Qué argumentos utilizaste y cuál fue el resultado?</label>
+        <textarea id="q21" rows="4"></textarea>
+
+        <!-- Question 22 -->
+        <label for="q22">¿Has tenido que manejar múltiples tareas urgentes al mismo tiempo? ¿Cómo organizaste tu trabajo y qué técnicas 
+            utilizaste para cumplir con todo?</label>
+        <textarea id="q22" rows="4"></textarea>
+
+        <!-- Question 23 -->
+        <label for="q23">Cuéntame sobre una situación en la que cometiste un error significativo. ¿Cómo lo enfrentaste y qué medidas tomaste 
+            para evitar que volviera a ocurrir?</label>
+        <textarea id="q23" rows="4"></textarea>
+
+        <!-- Question 24 -->
+        <label for="q24">Relata una experiencia en la que tu equipo enfrentó un desafío importante. ¿Cómo contribuiste a la solución y qué 
+            impacto tuvo tu participación?</label>
+        <textarea id="q24" rows="4"></textarea>
+
+
+
+
+
+        <!-- Submit Button -->
+        <button type="button" onclick="submitEvaluation()">Enviar</button>
+    </form>
+
+    <h3>AI-Generated Analysis:</h3>
+    <div id="response" style="white-space: pre-wrap; font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; border-radius: 8px; background: #f8f9fa;"></div>
 
     <script src="script.js"></script>
 </body>
