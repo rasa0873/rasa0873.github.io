@@ -65,6 +65,7 @@ async function submitEvaluation() {
     Trabajo en equipo en situaciones críticas: ${responses[23]}
 
     Please analyze this information and provide a structured candidate evaluation.
+    Provide a report in the same language used by the candidate.
     `;
 
     const backendURL = "https://us-central1-rasa-agent-3-badg.cloudfunctions.net/evaluate_google";
