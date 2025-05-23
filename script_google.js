@@ -68,8 +68,7 @@ async function submitEvaluation() {
     `;
 
     const backendURL = "https://us-central1-rasa-agent-3-badg.cloudfunctions.net/evaluate_google";
-    console.log("url for evaluate_google function, built");
-
+    console.log("url for evaluate_google function built", backendURL);
     try {
         const response = await fetch(backendURL, {
             method: "POST",
