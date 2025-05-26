@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>AITalento Maqueta Google - Empresas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        textarea, input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Cuestionario de Perfil Laboral - AITalento - Maqueta Google - Empresas</h2>
+
+    <form id="seekingForm">
+        <!-- Question 1 -->
+        <label for="q1">Descripción del cargo y sus responsabilidades</label>
+        <small>Indique las principales funciones y objetivos del puesto.</small>
+        <textarea id="q1" rows="10"></textarea>
+
+        <!-- Question 2 -->
+        <label for="q2">Conocimientos y destrezas requeridas.</label>
+        <small>Especifique habilidades técnicas, competencias y certificaciones necesarias.</small>
+        <textarea id="q2" rows="4"></textarea>
+
+        <!-- Question 3 -->
+        <label for="q3">Nivel requerido de experiencia.</label>
+        <small>Determine los años de experiencia necesarios y cualquier requisito de nivel profesional.</small>
+        <textarea id="q3" rows="4"></textarea>
+
+        <!-- Question 4 -->
+        <label for="q4">Trabajo remoto, presencial, híbrido.</label>
+        <small>Indique si el puesto es remoto, presencial o híbrido, y detalles sobre la modalidad laboral.</small>
+        <textarea id="q4" rows="4"></textarea>
+
+
+        <!-- Submit Button -->
+        <button type="button" onclick="submitEvaluation()">Enviar</button>
+    </form>
+
+    <h3>AI-Generated Analysis:</h3>
+    <div id="response" style="white-space: pre-wrap; font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; border-radius: 8px; background: #f8f9fa;"></div>
+
+    <script src="script_google_company.js"></script>
+</body>
+</html>
