@@ -24,8 +24,9 @@ async function seekingForm() { // Former submitEvaluation
     Trabajo remoto, presencial, híbrido: ${responses[3]}
     
 
-    Please analyze this job description and its desired requirements and provide advice to the job seeker.
-    Please use in the response report the same language used by the input.
+    Please analyze this job description and its desired requirements from the perspective of the 
+    employer and provide advice to the employer or recruiter.
+    Please use for the response report the same language used by the input.
     `;
 
     const backendURL = "https://us-central1-rasa-agent-3-badg.cloudfunctions.net/evaluate_google";
