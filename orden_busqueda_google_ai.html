@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>AITalento Maqueta Google - Empresas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        textarea, input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Orden de Búsqueda de Talento</h2>
+  
+    <form id="seekingForm">
+
+        <h3>Datos generales de la vacante</h3>
+
+        <!-- Question 1 -->
+        <label for="q1">¿Cuál es el nombre del puesto?</label>
+        <textarea id="q1" rows="2"></textarea>
+
+        <!-- Question 2 -->
+        <label for="q2">¿A qué departamento o área pertenece?</label>
+         <textarea id="q2" rows="2"></textarea>
+
+        <!-- Question 3 -->
+        <label for="q3">¿Cuál es el nivel jerárquico (operativo, supervisión, gerencial)?</label>
+         <textarea id="q3" rows="2"></textarea>
+
+        <!-- Question 4 -->
+        <label for="q4">¿Qué cargo tiene su superior inmediato?</label>
+         <textarea id="q4" rows="2"></textarea>
+
+        <!-- Question 5 -->
+        <label for="q5">¿Cuántos homólogos tendrá?</label>
+         <textarea id="q5" rows="2"></textarea>
+
+        <!-- Question 6 -->
+        <label for="q6">¿Cuántos puestos tiene su departamento o área?</label>
+         <textarea id="q6" rows="2"></textarea>
+
+        <!-- Question 7 -->
+        <label for="q7">¿Cuál es el impacto esperado de este puesto dentro del equipo o empresa?</label>
+        <textarea id="q7" rows="4"></textarea>
+
+        <div style="height: 80px;"></div> 
+
+
+        <h3>Descripción del puesto</h3>
+
+        <!-- Group 2: Job Description -->
+        <label for="q8">¿Cuál es el propósito principal del rol dentro de la empresa?</label>
+        <textarea id="q8" rows="4"></textarea>
+
+        <label for="q9">¿Cuáles son las responsabilidades clave del puesto?</label>
+        <textarea id="q9" rows="4"></textarea>
+
+        <label for="q10">¿Se mide con algún indicador sus metas? ¿Cuáles serían?</label>
+        <textarea id="q10" rows="4"></textarea>
+
+        <label for="q11">¿Qué herramientas o software debe manejar?</label>
+        <textarea id="q11" rows="2"></textarea>
+
+        <label for="q12">¿Se requiere disponibilidad para viajar o trabajar en horarios especiales?</label>
+        <textarea id="q12" rows="2"></textarea>
+
+        <label for="q13">¿Cuáles son los desafíos más comunes que enfrenta este puesto?</label>
+         <textarea id="q13" rows="2"></textarea>
+
+        <label for="q14">¿Recomiendas algún género para ocuparse?</label>
+        <textarea id="q14" rows="2"></textarea>
+
+        <label for="q15">¿Sugieres un rango de edad deseado?</label>
+        <textarea id="q15" rows="2"></textarea>
+
+        <label for="q16">¿Es deseable que viva en alguna ciudad o municipio en específico?</label>
+        <textarea id="q16" rows="4"></textarea>
+
+        <div style="height: 80px;"></div> 
+
+
+        <h3>Perfil del Candidato</h3>
+
+        <label for="q17">¿Qué nivel de educación minima se requiere?</label>
+        <textarea id="q17" rows="4"></textarea>
+
+        <label for="q18">¿Cuánta experiencia previa es necesaria y qué tipo de empresa y funciones?</label>
+        <textarea id="q18" rows="4"></textarea>
+
+        <label for="q19">¿Qué competencias técnicas y habilidades blandas son esenciales?</label>
+        <textarea id="q19" rows="4"></textarea>
+
+        <label for="q20">¿Se necesitan certificaciones específicas?</label>
+        <textarea id="q20" rows="4"></textarea>
+        
+        <label for="q21">¿Qué competencias diferenciadoras serían un plus en este rol?</label>
+        <textarea id="q21" rows="4"></textarea>
+
+        <div style="height: 80px;"></div> 
+
+
+        <h3>Condiciones Laborales</h3>
+        
+        <label for="q22">¿Cuál es el rango de salario ofrecido?</label>
+        <textarea id="q22" rows="4"></textarea>
+        
+        <label for="q23">¿El contrato es fijo, temporal o por proyecto?</label>
+        <textarea id="q23" rows="4"></textarea>
+        
+        <label for="q24">¿Cuáles son los beneficios (seguro, bonos, capacitación, etc)?</label>
+        <textarea id="q24" rows="4"></textarea>
+        
+        <label for="q25">¿Cuál es la fecha estimada de incorporación?</label>
+        <textarea id="q25" rows="4"></textarea>
+        
+        <label for="q26">¿Tendrá inducción corporativa y/o inducción por su puesto de trabajo?</label>
+        <textarea id="q26" rows="4"></textarea>
+
+        <label for="q27">¿Existe posibilidad de crecimiento dentro de la empresa para este rol?</label>
+        <textarea id="q27" rows="4"></textarea>
+
+        <div style="height: 80px;"></div> 
+
+        <h3>Proceso de Selección</h3>
+
+        <label for="q28">¿Requiere la aplicación de alguna prueba de habilidades? De ser así ¿qué desea
+            evaluar?
+        </label>
+        <textarea id="q28" rows="4"></textarea>
+
+        <label for="q29">¿Requiere la aplicación de alguna prueba psicológica? De ser así ¿qué desea
+            evaluar?</label>
+        <textarea id="q29" rows="4"></textarea>
+
+        <label for="q30">¿Cuál es la fecha límite para recibir postulaciones?</label>
+        <textarea id="q30" rows="4"></textarea>
+
+        <label for="q31">¿Cuáles son los criterios clave para tomar la decisión final de contratación?</label>
+        <textarea id="q31" rows="4"></textarea>
+
+
+
+        <!-- Submit Button -->
+        <button type="button" onclick="seekingForm()">Enviar</button>
+    </form>
+
+    <h3>AI-Generated Analysis:</h3>
+    <div id="response" style="white-space: pre-wrap; font-family: Arial, sans-serif; line-height: 1.6; padding: 10px; border-radius: 8px; background: #f8f9fa;"></div>
+
+    <script src="script_google_company_2.js"></script>
+</body>
+</html>
