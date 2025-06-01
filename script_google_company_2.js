@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 async function seekingForm() { // Former submitEvaluation
     const q1 = document.getElementById("q1").value.trim();
     const q2 = document.getElementById("q2").value.trim();
