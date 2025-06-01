@@ -52,33 +52,33 @@ async function seekingForm() { // Former submitEvaluation
     A qué departamento o área pertenece: ${responses[1]}
     Nivel jerárquico: ${responses[2]}
     Cargo del superior inmediato: ${responses[3]}
-    Cuántos homólogos tiene: ${response[4]}
-    Número de puestos en el departamento o área: ${response[5]}
-    Impacto de este cargo dentro del equipo o la empresa: ${response[6]}
-    Propósito principal del rol dentro de la empresa: ${response[7]}
-    Responsabilidades clave del puesto: ${response[8]}
-    Indicadores para medir sus metas: ${response[9]}
-    Herramietas o Software que debe manejar: ${response[10]}
-    Disponibilidad para viajar o trabajar en horarios especiales: ${response[11]}
-    Desafíos comunes que enfrenta este puesto: ${response[12]}
-    Género recomendado para el cargo: ${response[13]}
-    Rango de edad deseado: ${response[14]}
-    Deseable si vive en alguna ciudad o municipio en específico: ${response[15]}
-    Nivel de educación mínima requerida: ${response[16]}
-    Experiencia requerida y en qué empresas o funciones: ${response[17]}
-    Competencias técnicas y habilidades blandas necesarias: ${response[18]}
-    Certificaciones necesarias: ${response[19]}
-    Competencias diferenciadoras que serían un plus para este rol: ${response[20]}
-    Rango de salario ofrecido: ${response[21]}
-    Contrato fijo, temporal o por proyecto: ${response[22]}
-    Beneficios tales como seguro, bonos, capacitación, entre otros: ${response[23]}
-    Fecha estimada de incorporación: ${response[24]}
-    Inducción que recibirá el empleado: ${response[25]}
-    Posibilidad de crecimiento dentro de la empresa para ese rol: ${response[26]}
-    Prueba de habilidades será requerida: ${response[27]}
-    Prueba psicológica será requerida: ${response[28]}
-    Fecha límite para recibir postulaciones: ${response[29]}
-    Criterios clave para tomar la decisión final de contratación: ${response[30]}
+    Cuántos homólogos tiene: ${responses[4]}
+    Número de puestos en el departamento o área: ${responses[5]}
+    Impacto de este cargo dentro del equipo o la empresa: ${responses[6]}
+    Propósito principal del rol dentro de la empresa: ${responses[7]}
+    Responsabilidades clave del puesto: ${responses[8]}
+    Indicadores para medir sus metas: ${responses[9]}
+    Herramientas o Software que debe manejar: ${responses[10]}
+    Disponibilidad para viajar o trabajar en horarios especiales: ${responses[11]}
+    Desafíos comunes que enfrenta este puesto: ${responses[12]}
+    Género recomendado para el cargo: ${responses[13]}
+    Rango de edad deseado: ${responses[14]}
+    Deseable si vive en alguna ciudad o municipio en específico: ${responses[15]}
+    Nivel de educación mínima requerida: ${responses[16]}
+    Experiencia requerida y en qué empresas o funciones: ${responses[17]}
+    Competencias técnicas y habilidades blandas necesarias: ${responses[18]}
+    Certificaciones necesarias: ${responses[19]}
+    Competencias diferenciadoras que serían un plus para este rol: ${responses[20]}
+    Rango de salario ofrecido: ${responses[21]}
+    Contrato fijo, temporal o por proyecto: ${responses[22]}
+    Beneficios tales como seguro, bonos, capacitación, entre otros: ${responses[23]}
+    Fecha estimada de incorporación: ${responses[24]}
+    Inducción que recibirá el empleado: ${responses[25]}
+    Posibilidad de crecimiento dentro de la empresa para ese rol: ${responses[26]}
+    Prueba de habilidades será requerida: ${responses[27]}
+    Prueba psicológica será requerida: ${responses[28]}
+    Fecha límite para recibir postulaciones: ${responses[29]}
+    Criterios clave para tomar la decisión final de contratación: ${responses[30]}
     
     Por favor analiza estos criterios de búsqueda de talento por parte del empleador,
     crea una reporte con la lista de requerimientos del empleador, con una breve recomendación 
