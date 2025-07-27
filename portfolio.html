@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Software Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+            <img src="assets/rasa_apps_well_day.png" alt="RASA APPS Logo" id="logo-img" class="logo-img">
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Raúl Andrés Sira Alvarez</h1>
+                <p class="subtitle">Electrical Engineer • Android Developer • AI Tools Explorer • Founder of RASA Applications.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/raul-andres-sira-alvarez/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rasa0873" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://play.google.com/store/apps/developer?id=RASA+APPS" target="_blank" aria-label="PlayStore"><i class="fa-brands fa-android"></i></a>
+                </div>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="assets/raul_profile.png" alt="Raúl Sira Alvarez" class="profile-pic">
+                <p>
+                    Hey there! I'm an Electrical Engineer turned software developer to transform ideas into beautiful, functional Android applications. Since 2018, I've been crafting native apps using Java, Kotlin, and cloud-based platforms, always with a focus on usability and stability.
+                    <br><br>
+                    I started <strong>RASA Applications</strong> to build tools that simplify everyday challenges. I also co-lead <strong>AI Talento WebApp</strong>, a platform that combines my passion for software with emerging <strong>AI-powered technologies</strong> to support professional growth.
+                    <br><br>
+                    Outside of coding, you'll find me exploring the potential of AI tools, reflecting on meaningful memories, and sketching new app ideas over good coffee. I'm driven by curiosity, continuous learning, and a desire to create software that feels intuitive, helpful, and human.
+                </p>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div id="project-grid" class="project-grid">
+                <!-- Projects will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+        
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to new opportunities. Feel free to send me a message!</p>
+            <!-- IMPORTANT: Replace YOUR_EMAIL with your Formspree endpoint -->
+            <form action="https://formspree.io/f/xwpqbkqo" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made with purpose by RASA Apps - 2025</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
