@@ -1,0 +1,26 @@
+[   
+  {
+    "title": "VZLA Cambio",
+    "description": "Mobile app for tracking VES/USD exchange rates according to BCV, with candlestick charts. It allows users to set alerts for specific exchange rates and provides a history of the last 30 days.",
+    "imageUrl": "assets/projects/vzla-cambio.png",
+    "tags": ["Android", "Kotlin", "JSON", "Finance", "Jetpack Compose", "Firebase Crashlytics"],
+    "liveUrl": "https://play.google.com/store/apps/details?id=com.springwell.vzlacambio",
+    "repoUrl": ""
+  },
+  {
+    "title": "EPP Box Demo",
+    "description": "This app, presented to EPP Box as demo, manages registered users' access to a CrossFit box, allowing each user to view available workouts (WODs) and sign up for or cancel a reservation for each WOD. The app uses Firebase email authentication to grant or deny access.",
+    "imageUrl": "assets/projects/epp-box-screen.png",
+    "tags": ["Android", "Kotlin", "Firebase Authentication", "Firestore", "Firebase Storage", "XML"],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/rasa0873/EPP-Box-Demo"
+  },
+  {
+    "title": "Tip & Split Traveler",
+    "description": "Android app for calculating tips and splitting bills with real-time currency conversion. It allows users to set a default currency and provides a simple interface for entering amounts and calculating tips.",
+    "imageUrl": "assets/projects/tip_and_split_screenshot.png",
+    "tags": ["Android", "Java", "JSON", "XML"],
+    "liveUrl": "https://play.google.com/store/apps/details?id=com.siraapps.raul.tipandsplitrevb",
+    "repoUrl": "https://github.com/rasa0873/TipAndSplit"
+  }
+]
