@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RASA APPS</title>
+  <style>
+    :root {
+      --primary: #1976d2;      /* Azul moderno y vibrante para acentos */
+      --primary-hover: #1565c0;
+      --text-main: #1e1e1e;    /* Casi negro, más suave y elegante */
+      --text-muted: #6e6e73;   /* Gris medio tipo iOS/Apple para descripciones */
+      --border-soft: #f0f0f2;  /* Bordes ultra ligeros */
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* Fondo blanco absoluto */
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Contenedor Principal */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Encabezado */
+    header {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+
+    .brand-logo {
+      height: 72px; /* Altura ideal para el logo en web */
+      width: auto;
+      object-fit: contain;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin: 0;
+      color: var(--text-main);
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin: 12px 0 0;
+      letter-spacing: -0.01em;
+    }
+
+    /* Sección de Apps */
+    .apps-section {
+      padding-bottom: 80px;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--border-soft);
+      padding-bottom: 12px;
+    }
+
+    /* Cuadrícula de Apps */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    /* Tarjeta de Aplicación Minimalista */
+    .card {
+      background-color: #ffffff;
+      border: 1px solid var(--border-soft);
+      border-radius: 12px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Efecto hover sutil, no sobrecargado */
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.03);
+      border-color: #e2e2e5;
+    }
+
+    .card-content h3 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin: 0 0 24px;
+    }
+
+    /* Botón Moderno */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      background-color: var(--text-main); /* Botón oscuro/negro para estética minimalista */
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      align-self: flex-start; /* Evita que el botón se estire a lo ancho */
+      transition: background-color 0.15s ease, transform 0.1s ease;
+    }
+
+    .btn:hover {
+      background-color: #333333;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Pie de Página */
+    footer {
+      border-top: 1px solid var(--border-soft);
+      padding: 48px 0;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      margin-bottom: 16px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--text-main);
+    }
+
+    .dot {
+      color: #d1d1d6;
+    }
+
+    .copyright {
+      margin: 0;
+      font-size: 0.8rem;
+    }
+
+    /* Adaptabilidad Móvil */
+    @media (max-width: 600px) {
+      header {
+        padding: 60px 0 40px;
+      }
+      .brand-logo {
+        height: 60px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Encabezado con Logo y Título -->
+    <header>
+      <img src="/assets/rasa_apps_well_day.png" alt="Logo RASA APPS" class="brand-logo">
+      <h1>RASA APPS</h1>
+      <p class="tagline">Herramientas y aplicaciones móviles para Android</p>
+    </header>
+
+    <!-- Sección de Aplicaciones -->
+    <main class="apps-section">
+      <div class="section-title">Nuestras Aplicaciones</div>
+      <div class="grid">
+        <!-- Tarjeta de App 1 -->
+        <div class="card">
+          <div class="card-content">
+            <h3>Cambio Vzla</h3>
+            <p>Monitoreo en tiempo real de tipos de cambio de referencia, divisas globales y un resumen seleccionado de noticias económicas.</p>
+          </div>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.springwell.vzlacambio" target="_blank" rel="noopener">Ver en Google Play</a>
+        </div>
+
+        <!-- Tarjeta de App 2 (Ejemplo, edita según corresponda) -->
+        <div class="card">
+          <div class="card-content">
+            <h3>Nombre de Tu Otra App</h3>
+            <p>Una breve y atractiva descripción de lo que hace tu segunda aplicación, sus principales características y a quién va dirigida.</p>
+          </div>
+          <a class="btn" href="https://play.google.com/store/search?q=pub:RASA%20APPS" target="_blank" rel="noopener">Ver en Google Play</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Pie de Página Minimalista -->
+    <footer>
+      <div class="footer-links">
+        <a href="/privacy.html">Política de Privacidad</a>
+        <span class="dot">•</span>
+        <a href="mailto:tu-correo-soporte@gmail.com">Contacto y Soporte</a>
+        <span class="dot">•</span>
+        <a href="/app-ads.txt">app-ads.txt</a>
+      </div>
+      <p class="copyright">&copy; 2026 RASA APPS. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
